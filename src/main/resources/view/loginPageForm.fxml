@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nimsara.carRental.controller.LoginPageFormController">
+   <children>
+      <ImageView fitHeight="385.0" fitWidth="411.0" layoutX="358.0" layoutY="52.0" opacity="0.91" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Frame%201.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="47.0" layoutY="88.0" prefHeight="370.0" prefWidth="287.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 30; -fx-background-color: white;">
+         <children>
+            <Text layoutX="23.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name" wrappingWidth="95.58304786682129">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUserName" layoutX="20.0" layoutY="138.0" prefHeight="34.0" prefWidth="228.0" promptText="Enter user name" />
+            <PasswordField fx:id="txtPassword" layoutX="24.0" layoutY="221.0" prefHeight="34.0" prefWidth="228.0" promptText="Enter Password" />
+            <JFXButton layoutX="86.0" layoutY="316.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="96.0" style="-fx-background-radius: 20; -fx-background-color: white; -fx-cursor: green; -fx-border-color: #151B54;" styleClass="signupbtn" stylesheets="@../style/style.css" text="Login">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow radius="30.47" width="102.88">
+                     <input>
+                        <Reflection />
+                     </input>
+                  </InnerShadow>
+               </effect>
+            </JFXButton>
+            <Text layoutX="74.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+            <Hyperlink layoutX="207.0" layoutY="266.0" onAction="#hLinkSignUp" text="Signup" />
+            <Text fill="#fa7070" layoutX="19.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your SignIn details Here">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Text>
+            <Text layoutX="23.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="95.58304786682129">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="95.0" fitWidth="96.0" layoutX="25.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/img.png" />
+         </image>
+         <effect>
+            <Shadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

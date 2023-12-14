@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="803.0" prefWidth="1149.0" style="-fx-background-color: blue; -fx-background-radius: 20;" styleClass="signupbtn" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nimsara.carRental.controller.EmployeeFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="63.0" prefHeight="692.0" prefWidth="1149.0" style="-fx-background-color: white; -fx-background-radius: 20;" styleClass="signupbtn" stylesheets="@../style/style.css">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="115.0" layoutX="898.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/img.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <TableView fx:id="tblEmployee" layoutX="127.0" layoutY="282.0" onMouseClicked="#tblOnMouseClickAction" opacity="0.67" prefHeight="358.0" prefWidth="910.0">
+               <columns>
+                  <TableColumn fx:id="colEmployee_id" minWidth="123.20001363754272" prefWidth="123.20001363754272" text="Employee_id" />
+                  <TableColumn fx:id="colEmployee_name" minWidth="133.60003662109375" prefWidth="148.79998779296875" text="Employee_name" />
+                  <TableColumn fx:id="colEmployee_address" minWidth="122.39999389648438" prefWidth="136.80001831054688" text="Employee_address" />
+                  <TableColumn fx:id="colEmployee_job_category" minWidth="98.40008544921875" prefWidth="138.39996337890625" text="Employee_job_category" />
+                  <TableColumn fx:id="colcontactnum" minWidth="185.5999755859375" prefWidth="204.79998779296875" styleClass="fx" text="Employee_contactnum" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TableView>
+            <TextField fx:id="txtEmployee_id" layoutX="54.0" layoutY="63.0" prefHeight="26.0" prefWidth="215.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <TextField fx:id="txtcontactnum" layoutX="53.0" layoutY="120.0" prefHeight="26.0" prefWidth="215.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="54.0" layoutY="156.0" text="Employee_job_category">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployee_job_category" layoutX="54.0" layoutY="177.0" prefHeight="26.0" prefWidth="215.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="314.0" layoutY="42.0" text="Employee Name">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmployee_name" layoutX="313.0" layoutY="63.0" prefHeight="26.0" prefWidth="215.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <TextField fx:id="txtEmployee_address" layoutX="312.0" layoutY="118.0" prefHeight="26.0" prefWidth="215.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+            <Label layoutX="313.0" layoutY="97.0" text="Employee Address">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="302.0" fitWidth="538.0" layoutX="512.0" layoutY="396.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/img/bmw-m4-convertible-bmw-m4-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="42.0" text="Employee Id">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton layoutX="850.0" layoutY="265.0" onAction="#btnEmployeeclearOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: white;" text="Clear">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="604.0" layoutY="265.0" onAction="#btnEmployeeUpdateOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: lightblue;" text="Update">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="732.0" layoutY="265.0" onAction="#btnEmployeeDeleteOnAction" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: red;" text="Delete" textFill="#383736">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="471.0" layoutY="265.0" onAction="#btnEmployeeSaveOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: yellow;" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <Label layoutX="53.0" layoutY="163.0" prefHeight="22.0" prefWidth="191.0" text="Employee ContacNum">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="359.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Managment" wrappingWidth="538.1367340087891">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="43.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

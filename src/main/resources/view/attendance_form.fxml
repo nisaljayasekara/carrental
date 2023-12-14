@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="775.0" prefWidth="1127.0" style="-fx-background-color: blue; -fx-background-radius: 20;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nimsara.carRental.controller.AttendanceFormController">
+    <children>
+      <AnchorPane layoutX="-1.0" layoutY="69.0" prefHeight="706.0" prefWidth="1242.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="370.0" fitWidth="614.0" layoutX="577.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/img/bmw-m4-bmw-2017-luxury-vehicle-wallpaper-preview-removebg-preview.png" />
+               </image>
+            </ImageView>
+              <TextField fx:id="txtAttendance_id" layoutX="22.0" layoutY="102.0" prefHeight="26.0" prefWidth="225.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+              <Label layoutX="23.0" layoutY="82.0" prefHeight="18.0" prefWidth="148.0" text="Attendance_id">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Label>
+              <DatePicker fx:id="dateSelect" layoutX="22.0" layoutY="151.0" prefHeight="26.0" prefWidth="226.0" promptText="Enter Date">
+               <effect>
+                  <InnerShadow />
+               </effect></DatePicker>
+              <Label layoutX="23.0" layoutY="131.0" prefHeight="18.0" prefWidth="148.0" text="Attendance_date">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="txtTime" layoutX="314.0" layoutY="50.0" prefHeight="26.0" prefWidth="226.0">
+               <effect>
+                  <InnerShadow />
+               </effect></TextField>
+              <Label layoutX="313.0" layoutY="27.0" prefHeight="18.0" prefWidth="148.0" text="Attendance_time">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Label>
+              <JFXButton layoutX="494.0" layoutY="155.0" onAction="#btnEmployeeUpdateOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: lightblue;" text="Update">
+               <effect>
+                  <InnerShadow />
+               </effect></JFXButton>
+              <JFXButton layoutX="617.0" layoutY="155.0" onAction="#btnEmployeeDeleteOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: red;" text="Delete">
+               <effect>
+                  <InnerShadow />
+               </effect></JFXButton>
+              <JFXButton layoutX="744.0" layoutY="154.0" onAction="#btnEmployeeCleanOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: lightblue;" text="Clean" />
+            <ImageView fitHeight="174.0" fitWidth="132.0" layoutX="910.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/img.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+        <ComboBox fx:id="cmbEmployee_id" layoutX="23.0" layoutY="120.0" onAction="#cmbEmployeeOnAction" prefHeight="26.0" prefWidth="226.0">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+        <Label layoutX="23.0" layoutY="99.0" prefHeight="18.0" prefWidth="148.0" text="Employee_id">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="368.0" layoutY="224.0" onAction="#btnEmployeeSaveOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: yellow;" text="Save">
+         <effect>
+            <InnerShadow />
+         </effect></JFXButton>
+        <TableView fx:id="tblAttendance" layoutX="97.0" layoutY="325.0" onMouseClicked="#tblOnMouseClickAction" opacity="0.55" prefHeight="414.0" prefWidth="895.0">
+            <columns>
+                <TableColumn fx:id="colEmployee_id" minWidth="177.75" prefWidth="75.0" text="Employee_id" />
+                <TableColumn fx:id="colAttendance_id" minWidth="177.75" prefWidth="251.20001220703125" text="Attendance_id" />
+                <TableColumn fx:id="colAttendance_date" minWidth="177.75" prefWidth="204.0" text="Attendance_date" />
+                <TableColumn fx:id="colAttendance_time" minWidth="177.75" prefWidth="262.39996337890625" text="Attendance_time" />
+            </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </TableView>
+      <Text layoutX="354.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendance Managment" wrappingWidth="503.7366943359375">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="38.0" />
+         </font>
+      </Text>
+    </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

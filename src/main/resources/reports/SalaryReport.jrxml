@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Employee_Salary" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1915aea-ace4-44d8-8dda-c98f32a4d446">
+	<parameter name="Emp_id" class="java.lang.String"/>
+	<parameter name="Salary_Id" class="java.lang.String"/>
+	<parameter name="Salary_date" class="java.lang.String"/>
+	<parameter name="Amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="20" width="210" height="30" uuid="c92c3f1e-c5ca-4439-bd85-39851b372415"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Employee Salary Sheet]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="101" height="21" uuid="5f685646-3f11-4b8d-98d1-e44eab08486f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Employee Id :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="40" width="101" height="21" uuid="9260d3b7-0fc7-45af-a11a-635c6a75111a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Salary Id:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="220" y="0" width="130" height="21" uuid="a07bb74f-a5c5-4fef-a01c-af1eb925710d"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Emp_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="35" width="129" height="30" uuid="438fc6ce-bf3a-4f3a-b24c-f7177ecd6f9f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Salary_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="14" width="101" height="21" uuid="34d7eef1-8017-4c23-9595-ff5f3a300843"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Salary Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="54" width="101" height="21" uuid="6708d70b-9293-42be-a93f-ae9b187d544a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Amount:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="220" y="14" width="130" height="30" uuid="1d594003-efc0-4542-8cf2-951c1d67d9e9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Salary_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="54" width="130" height="30" uuid="829a0079-85f2-4a41-b263-c1191e50a747"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="73" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

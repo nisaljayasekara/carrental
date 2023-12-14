@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="795.0" prefWidth="1364.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.nimsara.carRental.controller.HomePageFormController">
+   <children>
+      <Text layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Stock Page " wrappingWidth="224.53668212890625">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <TableView layoutX="83.0" layoutY="324.0" prefHeight="327.0" prefWidth="758.0">
+        <columns>
+          <TableColumn prefWidth="152.80001831054688" text="Item Id" />
+          <TableColumn prefWidth="245.59999084472656" text="Item Name" />
+            <TableColumn prefWidth="360.79998779296875" text="Descrption" />
+        </columns>
+      </TableView>
+      <TextField layoutX="226.0" layoutY="97.0" />
+      <TextField layoutX="228.0" layoutY="199.0" />
+      <TextField layoutX="227.0" layoutY="146.0" />
+      <Label layoutX="134.0" layoutY="101.0" />
+      <Label layoutX="83.0" layoutY="201.0" prefHeight="18.0" prefWidth="119.0" text="Item Description">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="148.0" text="Item Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="98.0" text="Item Id">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Appoiment_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9d222898-872b-46f7-b4d4-16b14e9f28d9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<parameter name="Appoiment_id" class="java.lang.String"/>
+	<parameter name="Appoiment_time" class="java.lang.String"/>
+	<parameter name="Appoiment_date" class="java.lang.String"/>
+	<parameter name="Appoiment_return_time" class="java.lang.String"/>
+	<parameter name="Total_price" class="java.lang.String"/>
+	<parameter name="Customer_id" class="java.lang.String"/>
+	<parameter name="Car_id" class="java.lang.String"/>
+	<parameter name="Car_name" class="java.lang.String"/>
+	<parameter name="Car_price" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="20" width="151" height="30" uuid="3064103d-196a-4246-9a0a-0946bac6cee5"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Appoiment]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="260" y="5" width="100" height="30" uuid="57757802-75af-4b1c-b100-d315401e47be"/>
+				<textFieldExpression><![CDATA[$P{Appoiment_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="5" width="100" height="25" uuid="5b3edfe6-fcc9-410a-b4e3-7b67a3d30cc3"/>
+				<text><![CDATA[Appoimet ID]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="258" y="0" width="100" height="30" uuid="dc3a2f23-39b9-447e-9f50-3fb70222640b"/>
+				<textFieldExpression><![CDATA[$P{Appoiment_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="40" width="100" height="30" uuid="5090e416-50b6-4263-8c3a-25759edcaefa"/>
+				<textFieldExpression><![CDATA[$P{Appoiment_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="40" width="100" height="20" uuid="ec92c37c-5332-437d-8c1e-bb6ba4d62247"/>
+				<text><![CDATA[Appoiment Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="-2" width="100" height="30" uuid="783aa1e8-2972-42a6-bdb4-025fe7d0e1d8"/>
+				<text><![CDATA[Appoiment Time]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="135" splitType="Stretch">
+			<textField>
+				<reportElement x="260" y="10" width="100" height="30" uuid="45f971ba-8ea3-49dc-bd1b-a2bf1a1b4656"/>
+				<textFieldExpression><![CDATA[$P{Appoiment_return_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="50" width="100" height="30" uuid="916a2909-9053-491f-925a-5e7dbee845ff"/>
+				<textFieldExpression><![CDATA[$P{Customer_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="10" width="100" height="30" uuid="a15ca6ef-324b-487c-8683-8279fb3937bd"/>
+				<text><![CDATA[Appoiment Return Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="50" width="100" height="30" uuid="72c4f5c7-b5df-4c66-b0d8-02049a8cfd24"/>
+				<text><![CDATA[Appoiment CarID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="105" width="100" height="30" uuid="1540b3db-6c9b-4a9b-ab76-56a32d10c4e7"/>
+				<text><![CDATA[Appoiment CarName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="258" y="105" width="100" height="30" uuid="47d0c007-67e0-4073-b568-b28bd38a8405"/>
+				<textFieldExpression><![CDATA[$P{Car_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="10" width="100" height="30" uuid="3734c27d-b094-458c-8863-4fd574e35d9d"/>
+				<text><![CDATA[Appoiment Price]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="258" y="-48" width="100" height="30" uuid="6f428f91-21a3-4882-b51d-5b96eeab06c6"/>
+				<textFieldExpression><![CDATA[$P{Car_price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="5" width="100" height="30" uuid="aaa90a98-a1f5-40eb-a9f1-60db759ac966"/>
+				<text><![CDATA[Appoiment Total Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="256" y="5" width="100" height="30" uuid="77a2e413-5cd2-4e84-b124-5f58ed1e5f73"/>
+				<textFieldExpression><![CDATA[$P{Total_price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,40 @@
+.font{
+    -fx-font-family: "Noto Sans";
+}
+.textBox{
+    -fx-font-size: 20;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+}
+.loginbtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #FEADCE;
+    -fx-text-fill: #000000;
+}
+.loginbtn:hover{
+    -fx-background-color: #ff4b94;
+    -fx-text-fill: #ffffff;
+}
+.signupbtn{
+    -fx-font-weight: 700;
+}
+.fontdash{
+    -fx-font-family: "Lucida Sans Unicode";
+}
+.btn {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 24;
+    -fx-pref-width: 178;
+    -fx-pref-height: 38;
+    -fx-alignment: center;
+}
+
+.btn:hover {
+    -fx-background-color: #001c83;
+    -fx-border-color: transparent;
+    -fx-text-fill: #ffffff;
+}
